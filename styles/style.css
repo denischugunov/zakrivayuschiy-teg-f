@@ -32,7 +32,7 @@
   background-size: cover;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: "wght" var(--font-weight-par, 400);
+  font-variation-settings: 'wght' var(--font-weight-par, 400);
 }
 
 /* Повторяющиеся компоненты */
@@ -62,7 +62,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1.25rem;
-  padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 0 0 0;
+  padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 0 0;
 }
 
 .header__name {
@@ -96,7 +96,7 @@
 }
 
 .theme-menu__button::after {
-  content: "";
+  content: '';
   display: block;
   background-color: var(--accent-color, #000);
   transition: 0.3s ease;
@@ -129,13 +129,14 @@
 }
 
 .theme-menu__button:disabled::before {
-  content: "▶";
+  content: '▶';
   position: absolute;
   left: -20px;
   animation: arrow 0.5s ease-in-out infinite alternate;
 }
 
 @keyframes arrow {
+
   from {
     left: -20px;
   }
@@ -165,7 +166,7 @@
   font-weight: var(--font-weight-head, 700);
   font-size: 1.125rem;
   line-height: 1.375rem;
-  font-variation-settings: "wght" var(--font-weight-head, 700);
+  font-variation-settings: 'wght' var(--font-weight-head, 700);
 }
 
 .card__container-for-image {
@@ -184,20 +185,19 @@
   font-size: 0.875rem;
   line-height: 0.875rem;
   text-transform: uppercase;
-  text-shadow: -1px 0 var(--stroke-for-text, #fff),
-    0 1px var(--stroke-for-text, #fff), 1px 0 var(--stroke-for-text, #fff),
+  text-shadow:
+    -1px 0 var(--stroke-for-text, #fff),
+    0 1px var(--stroke-for-text, #fff),
+    1px 0 var(--stroke-for-text, #fff),
     0 -1px var(--stroke-for-text, #fff);
   mix-blend-mode: hard-light;
 }
 
-@supports (
-  (text-stroke: 1px var(--stroke-for-text, #fff)) or
-    (-webkit-text-stroke: 1px var(--stroke-for-text, #fff))
-) {
+@supports ((-webkit-text-stroke: 1px var(--stroke-for-text, #fff))) {
+
   .card__label-for-image {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--stroke-for-text, #fff);
-    text-stroke: 1px var(--stroke-for-text, #fff);
   }
 }
 
@@ -235,6 +235,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: 2px solid transparent;
+  transition: 0.3s ease;
+  inline-size: 39px;
+  block-size: 36px;
 }
 
 .card__like-button {
@@ -245,8 +249,8 @@
 
 .footer__button {
   gap: 0.5rem;
-  margin: calc(6.375rem - clamp(3.125rem, 3.0810rem + 0.1878vw, 3.25rem)) auto
-    clamp(6.25rem, 6.1842rem + 0.2809vw, 6.437rem) auto;
+  margin: calc(6.375rem - clamp(3.125rem, 3.081rem + 0.1878vw, 3.25rem)) auto
+    clamp(6.25rem, 6.1842rem + 0.2809vw, 6.437rem);
   border: 2px solid var(--accent-color, #000);
   padding: 0.937rem 1.25rem;
   background-color: var(--bg-color, #fff);
@@ -261,6 +265,7 @@
 }
 
 @media (width <= 376px) {
+
   .footer__button {
     flex-direction: column;
     align-items: center;
@@ -280,7 +285,7 @@
 }
 
 .button::before {
-  content: "fff";
+  content: 'fff';
   position: absolute;
   inset: 0;
   background-color: var(--accent-color, #000);
@@ -306,13 +311,6 @@
   font-size: 0.875rem;
   line-height: 0.812rem;
   mix-blend-mode: difference;
-}
-
-.card__icon-button {
-  outline: 2px solid transparent;
-  transition: 0.3s ease;
-  inline-size: 39px;
-  block-size: 36px;
 }
 
 .card__icon-button:focus {
@@ -351,45 +349,25 @@
 
 /* анимации сердца для active */
 
-.core {
-  fill: transparent;
-  transition: fill 0.3s linear 0.03s;
-}
-
 .card__icon-button:active .core {
-  fill: var(--heart-main-color, #ff0000);
-  transition: fill 0.3s linear;
-}
-
-.main-body {
-  fill: transparent;
+  fill: var(--heart-main-color, #f00);
   transition: fill 0.3s linear;
 }
 
 .card__icon-button:active .main-body {
-  fill: var(--heart-main-color, #ff0000);
+  fill: var(--heart-main-color, #f00);
   transition: fill 0.3s linear 0.05s;
 }
 
 /* анимации сердца для клика по иконке */
 
-.core {
-  fill: transparent;
-  transition: fill 0.3s linear 0.03s;
-}
-
 .like-icon.is-liked .core {
-  fill: var(--heart-main-color, #ff0000);
-  transition: fill 0.3s linear;
-}
-
-.main-body {
-  fill: transparent;
+  fill: var(--heart-main-color, #f00);
   transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
-  fill: var(--heart-main-color, #ff0000);
+  fill: var(--heart-main-color, #f00);
   transition: fill 0.3s linear 0.05s;
 }
 
@@ -398,13 +376,14 @@
 }
 
 .like-icon.is-liked .contour {
-  fill: var(--heart-main-color, #ff0000);
+  fill: var(--heart-main-color, #f00);
   transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon.is-liked .heart {
   transform-origin: center;
-  animation: heart-animation 0.3s ease-in 0.1s alternate,
+  animation:
+    heart-animation 0.3s ease-in 0.1s alternate,
     sparks-animation 0.3s ease-in 0.3s alternate;
 }
 
@@ -413,6 +392,7 @@
 }
 
 @keyframes heart-animation {
+
   from {
     scale: 1;
   }
@@ -423,6 +403,7 @@
 }
 
 @keyframes sparks-animation {
+
   from {
     opacity: 0;
   }
@@ -435,15 +416,15 @@
 /* стилизация всплывающего окна */
 
 .dialog {
-  background-color: var(--bg-color);
+  border: 2px solid var(--accent-color);
+  padding: 1.875rem
+    calc(4.375rem - clamp(1.875rem, 1.6549rem + 0.939vw, 2.5rem));
+  color: var(--accent-color);
   font-family: var(--accent-font, PressStart2P);
   font-size: 0.875rem;
   line-height: 1.312rem;
   text-transform: uppercase;
-  color: var(--accent-color);
-  border: 2px solid var(--accent-color);
-  padding: 1.875rem
-    calc(4.375rem - clamp(1.875rem, 1.6549rem + 0.939vw, 2.5rem));
+  background-color: var(--bg-color);
 }
 
 .dialog[open] {
@@ -454,33 +435,33 @@
 
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
-} 
+}
 
 .dialog__content {
   display: flex;
-  gap: 1.25rem;
   align-items: center;
+  gap: 1.25rem;
 }
 
 .dialog__icon {
-  inline-size: 39px;
   fill: var(--accent-color, #000);
+  inline-size: 39px;
 }
 
 .dialog__header {
+  width: clamp(12.375rem, 11.5827rem + 3.3803vw, 14.625rem);
   font-size: inherit;
   line-height: inherit;
-  width: clamp(12.375rem, 11.5827rem + 3.3803vw, 14.625rem);
 }
 
 .dialog__button {
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 0.812rem;
-  text-transform: inherit;
   border: 2px solid var(--accent-color);
   padding: 0.781rem 0;
+  line-height: 0.812rem;
+  text-transform: inherit;
   cursor: pointer;
 }
 
@@ -503,11 +484,11 @@ dialog::backdrop {
 }
 
 .filter-hue-rotate {
-  filter: hue-rotate(30deg)
+  filter: hue-rotate(30deg);
 }
 
 .filter-saturate {
-  filter: saturate(150%)
+  filter: saturate(150%);
 }
 
 .filter-multiply {
