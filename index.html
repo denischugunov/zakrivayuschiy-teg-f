@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
     <meta name="color-scheme" content="light dark" />
-    <link rel="icon" href="/images/favicon.ico" sizes="any" />
-    <link rel="icon" href="/svg/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/images/favicon.png" />
-    <link rel="stylesheet" href="/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles/variables.css" />
-    <link rel="stylesheet" href="/styles/globals.css" />
-    <link rel="stylesheet" href="/styles/style.css" />
-    <link rel="stylesheet" href="/styles/animations.css" />
-    <link rel="stylesheet" href="/styles/themes.css" />
-    <script src="/scripts/set-theme.js"></script>
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./styles/themes.css" />
+    <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
       <div class="header__logo-group">
-        <h1 class="header__name">&lt/html&gt</h1>
-        <span class="header__description">закрывающий тег</span>
+        <a class="header__logo">&lt;/html&gt;</a>
+        <h1 class="header__name">закрывающий тег</h1>
       </div>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -56,12 +56,12 @@
         <div class="card__container-for-image">
           <img
             class="card__image filter-brightness"
-            src="/images/batman-image.webp"
+            src="./images/batman-image.webp"
             alt="Изображение-мем с задумчивым Бэтменом"
           />
-          <span class="card__label-for-image">&lt/html&gt</span>
+          <span class="card__label-for-image">&lt;/html&gt;</span>
         </div>
-        <section class="card__content">
+        <div class="card__content">
           <div class="card__text">
             <p>
               Это было самое начало пути. На этом этапе важно было проникнуться
@@ -71,8 +71,9 @@
             <p>Тут я впервые увидел JS.</p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -104,24 +105,24 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
-        </section>
+        </div>
       </article>
       <article class="card">
         <h2 class="card__header">1 спринт: Я — чистый лист</h2>
         <div class="card__container-for-image">
           <img
             class="card__image filter-grayscale"
-            src="/images/grid-image.webp"
+            src="./images/grid-image.webp"
             alt="Изображение движения в пространстве из сеток"
             loading="lazy"
           />
-          <span class="card__label-for-image">&lt/html&gt</span>
+          <span class="card__label-for-image">&lt;/html&gt;</span>
         </div>
-        <section class="card__content">
+        <div class="card__content">
           <div class="card__text">
             <p>
               На первых этапах мы работали со страхами и сомнениями, которые
@@ -133,8 +134,9 @@
             <p>Тут я застрял в Гридах.</p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -166,24 +168,24 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
-        </section>
+        </div>
       </article>
       <article class="card">
         <h2 class="card__header">1 спринт: А если не получится?</h2>
         <div class="card__container-for-image">
           <img
             class="card__image filter-sepia"
-            src="/images/winner-image.webp"
+            src="./images/winner-image.webp"
             alt="Изображение довольного пользователя за компьютером"
             loading="lazy"
           />
-          <span class="card__label-for-image">&ltcss&gt</span>
+          <span class="card__label-for-image">&lt;css&gt;</span>
         </div>
-        <section class="card__content">
+        <div class="card__content">
           <div class="card__text">
             <p>
               Первый проект — позади! Но это всё ещё самое начало пути. Радость
@@ -193,8 +195,9 @@
             <p>Ну тут обо всем говорит гифка.</p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -226,11 +229,11 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
-        </section>
+        </div>
       </article>
       <article class="card">
         <h2 class="card__header">2 спринт: Погоня за идеалом</h2>
@@ -239,14 +242,13 @@
             class="card__image filter-sepia"
             src="https://www.youtube.com/embed/XGxIE1hr0w4?si=dMomvF9crR6Slg7W"
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
-          <span class="card__label-for-image">&ltdesigions&gt</span>
+          <span class="card__label-for-image">&lt;desigions&gt;</span>
         </div>
-        <section class="card__content">
+        <div class="card__content">
           <div class="card__text">
             <p>
               На этом этапе вы уже достаточно разбирались в основах вёрстки,
@@ -258,8 +260,9 @@
             <p>Тут я учился вставлять фреймы...</p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -291,24 +294,24 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
-        </section>
+        </div>
       </article>
       <article class="card">
         <h2 class="card__header">2 спринт: О тех, кто рядом</h2>
         <div class="card__container-for-image">
           <img
             class="card__image filter-multiply"
-            src="/images/my-cat-image.jpg"
+            src="./images/my-cat-image.jpg"
             alt="Изображение кошки автора за компьютером"
             loading="lazy"
           />
-          <span class="card__label-for-image">&ltcare&gt</span>
+          <span class="card__label-for-image">&lt;care&gt;</span>
         </div>
-        <section class="card__content">
+        <div class="card__content">
           <div class="card__text">
             <p>
               Всё это время вы были не одиноки (хотя, возможно, иногда и
@@ -321,8 +324,9 @@
             <p>Тут уже мне помогала моя кошка.</p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -354,24 +358,24 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
-        </section>
+        </div>
       </article>
       <article class="card">
         <h2 class="card__header">3 спринт: Обходные стратегии</h2>
         <div class="card__container-for-image">
           <img
             class="card__image filter-invert"
-            src="/images/adaptive-design-meme-image.jpg"
+            src="./images/adaptive-design-meme-image.jpg"
             alt="Кадр из фильма Мальчишник в Вегасе, сцена в казино"
             loading="lazy"
           />
-          <span class="card__label-for-image">&ltsupport&gt</span>
+          <span class="card__label-for-image">&lt;support&gt;</span>
         </div>
-        <section class="card__content">
+        <div class="card__content">
           <div class="card__text">
             <p>
               На этом курсе вы постоянно решали разные задачи. В какой-то момент
@@ -381,8 +385,9 @@
             <p>Тут я много считал %, rem, vw и др.</p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -414,24 +419,24 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
-        </section>
+        </div>
       </article>
       <article class="card">
         <h2 class="card__header">3 спринт: Когда опускаются руки</h2>
         <div class="card__container-for-image">
           <img
             class="card__image filter-hue-rotate"
-            src="/images/coffee-image.jpg"
+            src="./images/coffee-image.jpg"
             alt="Изображение доктора Хауса с кружкой кофе"
             loading="lazy"
           />
-          <span class="card__label-for-image">&ltlifes-style: none;&gt</span>
+          <span class="card__label-for-image">&lt;lifes-style: none;&gt;</span>
         </div>
-        <section class="card__content">
+        <div class="card__content">
           <div class="card__text">
             <p>
               Во время учёбы часто возникает чувство, когда не знаешь, за что
@@ -443,8 +448,9 @@
             <p>Чашка кофе и погнали.</p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -476,24 +482,24 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
-        </section>
+        </div>
       </article>
       <article class="card">
         <h2 class="card__header">«Сейчас я здесь»</h2>
         <div class="card__container-for-image">
           <img
             class="card__image filter-saturate"
-            src="/images/3d-design-image.webp"
+            src="./images/3d-design-image.webp"
             alt="Изображение молодого человека, которому трудно устоять на ногах"
             loading="lazy"
           />
-          <span class="card__label-for-image">&ltexperience&gt</span>
+          <span class="card__label-for-image">&lt;experience&gt;</span>
         </div>
-        <section class="card__content">
+        <div class="card__content">
           <div class="card__text">
             <p>
               Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
@@ -506,8 +512,9 @@
             <p>Ну а тут я познаваю азы 3Д дизайна.</p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 class="like-icon"
                 width="39"
                 height="36"
@@ -539,22 +546,20 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
-        </section>
+        </div>
       </article>
-    </main>
-    <footer class="footer">
       <button
-        class="button footer__button"
+        class="button save-form__button"
         type="button"
         onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id"
       >
         <svg class="floppy-icon button__icon" viewBox="0 0 39 39">
-          <use href="/svg/floppy.svg#floppy" />
+          <use href="./svg/floppy.svg#floppy" />
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
@@ -565,19 +570,19 @@
       >
         <div class="dialog__content">
           <svg class="floppy-icon dialog__icon" viewBox="0 0 39 39">
-            <use href="/svg/floppy.svg#floppy" />
+            <use href="./svg/floppy.svg#floppy" />
           </svg>
           <h2 class="dialog__header">Вставьте дискету, чтобы продолжить</h2>
         </div>
         <button
-          class="dialog__button"
+          class="button dialog__button"
           type="button"
           onclick="window['dialog-id'].close()"
         >
-          Ок
+          <span class="button__text">Ок</span>
         </button>
       </dialog>
-    </footer>
-    <script src="/scripts/like.js"></script>
+    </main>
+    <script src="./scripts/like.js"></script>
   </body>
 </html>

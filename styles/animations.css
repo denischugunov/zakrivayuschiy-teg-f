@@ -12,3 +12,114 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+/* анимации для стрелки у переключателя темы */
+
+.theme-menu__button:disabled::before {
+  animation: arrow 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes arrow {
+
+  from {
+    left: -20px;
+  }
+
+  to {
+    left: -16px;
+  }
+}
+
+/* стилизация иконки сердца */
+
+.sparks {
+  opacity: 0;
+}
+
+/* анимации сердца для ховера */
+
+.core {
+  fill: transparent;
+  transition: fill 0.3s linear 0.03s;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--heart-contour-color, #000);
+  transition: fill 0.3s linear;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--heart-contour-color, #000);
+  transition: fill 0.3s linear 0.05s;
+}
+
+/* анимации сердца для active */
+
+.card__icon-button:active .core {
+  fill: var(--heart-main-color, #f00);
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--heart-main-color, #f00);
+  transition: fill 0.3s linear 0.05s;
+}
+
+/* анимации сердца для клика по иконке */
+
+.like-icon.is-liked .core {
+  fill: var(--heart-main-color, #f00);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-main-color, #f00);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.contour {
+  transition: fill 0.1s linear;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-main-color, #f00);
+  transition: fill 0.3s linear 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  transform-origin: center;
+  animation:
+    heart-animation 0.3s ease-in 0.1s alternate,
+    sparks-animation 0.3s ease-in 0.3s alternate;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks-animation 0.3s ease-in 0.3s alternate;
+}
+
+@keyframes heart-animation {
+
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 1.5;
+  }
+}
+
+@keyframes sparks-animation {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
