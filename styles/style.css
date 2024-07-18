@@ -15,13 +15,7 @@
 
 .page {
   color: var(--accent-color, #000);
-  font-family: var(
-    --main-font,
-    Inter-Variable,
-    'MS Sans Serif',
-    sans-serif,
-    Arial
-  );
+  font-family: var(--main-font, Inter-Variable, 'MS Sans Serif', fantasy);
   background-color: var(--bg-color, #fff);
   background-image: var(
     --bg-image,
@@ -58,13 +52,7 @@
   gap: 1.562rem;
   margin: 6.25rem auto 0;
   border: solid var(--accent-color, #000) 2px;
-  font-family: var(
-    --accent-font,
-    'PressStart2P',
-    'fantasy',
-    'MS Sans Serif',
-    sans-serif
-  );
+  font-family: var(--accent-font, 'PressStart2P', fantasy);
   text-transform: uppercase;
   background-color: var(--bg-color, #fff);
   inline-size: clamp(23.43rem, 16.2751rem + 30.5277vw, 43.75rem);
@@ -182,13 +170,7 @@
   right: clamp(0.813rem, 0.5489rem + 1.1268vw, 1.563rem);
   opacity: 0.5;
   color: var(--accent-color, #000);
-  font-family: var(
-    --accent-font,
-    'PressStart2P',
-    'fantasy',
-    'MS Sans Serif',
-    sans-serif
-  );
+  font-family: var(--accent-font, 'PressStart2P', fantasy);
   font-weight: normal;
   font-size: 0.875rem;
   line-height: 0.875rem;
@@ -260,7 +242,7 @@
 
 .save-form__button {
   gap: 0.5rem;
-  margin: calc(6.375rem - clamp(3.125rem, 3.081rem + 0.1878vw, 3.25rem)) auto
+  margin: calc(0.125rem - clamp(0rem, -0.044rem + 0.1878vw, 0.125rem)) auto
     clamp(6.25rem, 6.1842rem + 0.2809vw, 6.437rem);
   border: 2px solid var(--accent-color, #000);
   padding: 0.937rem 1.25rem;
@@ -319,13 +301,7 @@
   position: relative;
   z-index: 1;
   color: var(--accent-color-for-buttons, #fff);
-  font-family: var(
-    --accent-font,
-    'PressStart2P',
-    'fantasy',
-    'MS Sans Serif',
-    sans-serif
-  );
+  font-family: var(--accent-font, 'PressStart2P', fantasy,);
   font-weight: normal;
   font-size: 0.875rem;
   line-height: 0.812rem;
@@ -347,13 +323,7 @@
   padding: 1.875rem
     calc(4.375rem - clamp(1.875rem, 1.6549rem + 0.939vw, 2.5rem));
   color: var(--accent-color);
-  font-family: var(
-    --accent-font,
-    'PressStart2P',
-    'fantasy',
-    'MS Sans Serif',
-    sans-serif
-  );
+  font-family: var(--accent-font, 'PressStart2P', fantasy);
   font-weight: normal;
   font-size: 0.875rem;
   line-height: 1.312rem;

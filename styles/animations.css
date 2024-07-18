@@ -93,9 +93,7 @@
 
 .like-icon.is-liked .heart {
   transform-origin: center;
-  animation:
-    heart-animation 0.3s ease-in 0.1s alternate,
-    sparks-animation 0.3s ease-in 0.3s alternate;
+  animation: heart-animation 0.3s ease-in 0.1s alternate;
 }
 
 .like-icon.is-liked .sparks {
